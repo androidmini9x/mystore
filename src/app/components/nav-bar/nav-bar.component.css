@@ -1,0 +1,20 @@
+header {
+    text-align: center;
+    background: #104457;
+    color: #fff;
+    padding: 12px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: #ffffff;
+    padding: 0.5rem;
+    background-color: #49924f;
+    margin: 0.25rem;
+    display:block;
+    width: 100px;
+}
