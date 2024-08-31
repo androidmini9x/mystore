@@ -2,6 +2,6 @@
     <h2>My Store</h2>
     <nav>
         <a routerLink="/">Products List</a>
-        <a routerLink="/cart">Cart</a>
+        <a routerLink="/cart">Cart <span *ngIf="numCart > 0">({{ numCart }})</span></a>
     </nav>
 </header>
