@@ -3,7 +3,7 @@
     <h3>{{ product.name }}</h3>
     <p>${{ product.price }}</p>
     <div>
-        <input class="quantity-input" type="number" name="quantity" value="1">
-        <button class="add-to-cart">Add to cart</button>
+        <input class="quantity-input" type="number" name="quantity" min="1" [(ngModel)]="quantity">
+        <button class="add-to-cart" (click)="addProduct()">Add to cart</button>
     </div>
 </div>

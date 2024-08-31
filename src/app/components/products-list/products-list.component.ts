@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Product } from '../../models/product';
 import { ProductsService } from '../../services/products.service';
+import { Cart } from '../../models/cart';
 
 @Component({
   selector: 'app-products-list',
@@ -16,5 +17,9 @@ export class ProductsListComponent {
     this.productsService.getProducts().subscribe(res => {
       this.products = res;
     })
+  }
+
+  addProductToCart(p: Cart): void {
+    window.alert(JSON.stringify(p));
   }
 }
