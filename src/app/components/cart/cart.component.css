@@ -1,0 +1,75 @@
+img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.form-margin {
+    margin-bottom: 12px;
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.cart-item-details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 80px;
+}
+
+.number-input {
+    width: 40px;
+    margin-bottom: 8px;
+    padding: 0.5rem;
+    border: 0;
+    font-weight: bold;
+    background-color: rgb(219, 219, 224);
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 64px;
+}
+
+.cart-panel {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.empty-cart-message {
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.field > input {
+    border: 0;
+    border-radius: 0;
+    padding: 0.75rem;
+    background-color: rgb(247 247 247);
+}
+
+.purchase > button {
+    margin-top: 1rem;
+    padding: 0.50rem 1.2rem;
+    border: 0;
+    border-radius: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.purchase {
+    text-align: right;
+}
