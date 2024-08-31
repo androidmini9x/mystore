@@ -5,21 +5,9 @@
     <form class="form-margin">
         <div class="cart-container">
             <div class="cart-panel">
-                <div class="cart-item">
-                    <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="">
-                    <div class="cart-item-details">
-                        <h3>Headphones</h3>
-                        <p>79.99</p>
-                        <input class="number-input" type="number" name="quantity" min="1">
-                    </div>
-                </div>
-                <div class="cart-item">
-                    <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="">
-                    <div class="cart-item-details">
-                        <h3>Headphones</h3>
-                        <p>79.99</p>
-                        <input class="number-input" type="number" name="quantity" min="1">
-                    </div>
+                <app-cart-item *ngFor="let c of cart" [cartItem]="c" (cartEvent)="updateChange($event)"></app-cart-item>
+                <div>
+                    <h4>Total Price: {{ total.toFixed(2) }}</h4>
                 </div>
             </div>
             <div class="cart-panel">

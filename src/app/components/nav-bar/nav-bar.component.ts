@@ -11,6 +11,6 @@ export class NavBarComponent {
   constructor(private cart: CartService) {}
 
   ngOnInit() {
-    this.cart.products.length
+    this.numCart = this.cart.products.length;
   }
 }
