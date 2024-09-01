@@ -1,27 +1,39 @@
 # MyStore
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.1.
+Welcome to **MyStore**, an e-commerce single-page application built with Angular. This project is task for UDACITY Nanodegree course to implement interactive and dynamic web applications, featuring a rich user experience for browsing and purchasing products.
 
-## Development server
+## Project Introduction
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+**MyStore** is an e-commerce application that allows users to:
+- View a list of available products.
+- Add products to their shopping cart.
+- Complete a checkout process.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getting Started
 
-## Build
+### Prerequisites
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Ensure you have [Node.js](https://nodejs.org/) and [Angular CLI](https://angular.io/cli) installed.
 
-## Running unit tests
+### Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-## Running end-to-end tests
+2. **Run the Application**
+   ```bash
+   ng serve
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   Open your browser and navigate to `http://localhost:4200` to view the application.
 
-## Further help
+## Project Features
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **Product List Page**: Displays all available products and allows users to add them to their cart.
+- **Product Details Page**: Provides detailed information about each product.
+- **Shopping Cart**: Shows products added by the user and allows them to review their cart.
+- **Checkout Form**: Collects user information for order processing.
+- **Order Confirmation Page**: Displays the result after the user completes the checkout process.
