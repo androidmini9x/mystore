@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavigationExtras, Router } from '@angular/router';
 import { Cart } from '../../models/cart';
 import { CartService } from '../../services/cart.service';
 
@@ -15,7 +16,7 @@ export class CartComponent {
   card = '';
 
 
-  constructor(private cartService: CartService) {}
+  constructor(private cartService: CartService, private router: Router) {}
 
   ngOnInit() {
     this.cart = this.cartService.products;
@@ -31,11 +32,13 @@ export class CartComponent {
     this.total = this.cart.map(c => c.price * c.quantity).reduce((a, b) => a + b, 0);
   }
 
-  SubmitForm() {
-    window.alert({
-      fullname: this.fullname,
-      address: this.address,
-      card: this.card,
-    });
+  submitForm(): void {
+    const data: NavigationExtras = {
+      state: {
+        fullname: this.fullname,
+        total: this.total
+      }
+    }
+    this.router.navigate(['/order-confirmation'], data);
   }
 }

@@ -2,7 +2,7 @@
     <h2>You've not add product to Cart Yet.</h2>
 </div>
 <div *ngIf="cart.length > 0">
-    <form class="form-margin" #form="ngForm" (ngSubmit)="SubmitForm()">
+    <form class="form-margin" #form="ngForm" (ngSubmit)="submitForm()">
         <div class="cart-container">
             <div class="cart-panel">
                 <app-cart-item *ngFor="let c of cart" [cartItem]="c" (cartEvent)="updateChange($event)"></app-cart-item>
