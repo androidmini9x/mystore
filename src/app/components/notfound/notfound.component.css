@@ -1,0 +1,24 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
+.emoji {
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+h1, p {
+    font-family: monospace;
+}
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #6a5d91
+}
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    line-height: 2rem;
+    color: #975757;
+}

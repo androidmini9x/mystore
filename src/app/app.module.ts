@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { CartItemComponent } from './components/cart-item/cart-item.component';
 import { ProductDetialComponent } from './components/product-detial/product-detial.component';
 import { OrderConfirmationComponent } from './components/order-confirmation/order-confirmation.component';
+import { NotfoundComponent } from './components/notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { OrderConfirmationComponent } from './components/order-confirmation/orde
     CartComponent,
     CartItemComponent,
     ProductDetialComponent,
-    OrderConfirmationComponent
+    OrderConfirmationComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
