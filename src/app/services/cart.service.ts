@@ -32,4 +32,8 @@ export class CartService {
     this.products = this.products.filter(c => c.id !== p.id);
     return this.products
   }
+
+  emptyCart(): void {
+    this.products = [];
+  }
 }
