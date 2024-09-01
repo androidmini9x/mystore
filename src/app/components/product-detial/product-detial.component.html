@@ -1,0 +1,18 @@
+<div class="back-link">
+    <a routerLink="/">Back to product list</a>
+</div>
+<div *ngIf="error === true">
+    <h1 class="error">Sorry, The product not found!</h1>
+</div>
+<div class="detail-container" *ngIf="error === false">
+    <img src="{{ product.url }}" alt="{{ product.name }}">
+    <div class="detail-item">
+        <h1>{{ product.name }}</h1>
+        <p>{{ product.description }}</p>
+        <p>${{ product.price }}</p>
+        <div>
+            <input class="quantity-input" type="number" name="quantity" min="1" [(ngModel)]="quantity">
+            <button class="add-to-cart" (click)="addToCart(product)">Add to cart</button>
+        </div>
+    </div>
+</div>

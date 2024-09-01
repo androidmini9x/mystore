@@ -1,0 +1,47 @@
+img {
+    border-radius: 10px;
+    width: 320px;
+}
+  
+.quantity-input {
+    width: 40px; 
+    margin-bottom: 8px;
+    padding: 0.5rem;
+    border: 0;
+    font-weight: bold;
+    background-color: rgb(219, 219, 224);
+}
+
+.add-to-cart {
+    border: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+    font-weight: bold;
+    background-color: rgb(155, 155, 182);
+}
+
+.detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.detail-item {
+    margin-left: 128px;
+    margin-right: 128px;
+}
+
+.back-link {
+    margin: 8px;
+    text-align: center;
+}
+
+.back-link > a {
+    text-decoration: none;
+}
+
+.error {
+    text-align: center;
+    color: brown;
+}
