@@ -30,6 +30,7 @@ export class CartService {
 
   removeProducts(p: Cart): Cart[] {
     this.products = this.products.filter(c => c.id !== p.id);
+    window.alert(`${p.name} x${p.quantity} removed from Cart`);
     return this.products
   }
 
