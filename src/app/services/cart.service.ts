@@ -9,6 +9,7 @@ export class CartService {
   constructor() {}
 
   addToCart(p: Cart): void {
+    window.alert(`${p.name} x${p.quantity} add to Cart`);
     const idx = this.products.findIndex(e => e.id === p.id);
     if (idx !== -1) {
       this.products[idx].quantity += p.quantity;
