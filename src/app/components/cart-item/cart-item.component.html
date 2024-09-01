@@ -5,6 +5,6 @@
         <p>${{ cartItem.price }}</p>
         <input class="number-input" type="number" name="quantity" min="0" value="{{ cartItem.quantity }}"
         [(ngModel)]="cartItem.quantity"
-        (change)="itemChanged()">
+        (ngModelChange)="itemChanged()">
     </div>
 </div>
