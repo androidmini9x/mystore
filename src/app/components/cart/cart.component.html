@@ -15,7 +15,7 @@
                     <label for="fullname">Full name</label>
                     <input type="text" name="fullname" id="fullname" [(ngModel)]="fullname" required minlength="3" pattern="[a-zA-Z ]*" placeholder="Full name (min: 3)" #fullnameTag="ngModel">
                     <div *ngIf="fullnameTag.invalid && fullnameTag.dirty">
-                        <span class="error-msg">Min length is 3</span>
+                        <span class="error-msg">Min length is 3<br>Should only contains english letters</span>
                     </div>
                 </div>
                 <div class="field">
