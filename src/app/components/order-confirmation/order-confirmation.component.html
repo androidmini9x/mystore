@@ -1,0 +1,28 @@
+<div class="order">
+  <h1>Thank you, {{ fullname }}</h1>
+  <p>Your Order is confirmed!</p>
+  <div class="order-item">
+    <table>
+        <tr>
+            <th>Picture</th>
+            <th>Product Name</th>
+            <th>Price x QTY</th>
+            <th>Total</th>
+        </tr>
+        <tr *ngFor="let c of cart">
+            <td><img
+                src="{{ c.url }}"
+                alt="{{ c.name }}"
+              /></td>
+            <td>{{ c.name }}</td>
+            <td>{{ c.price }} x {{ c.quantity }}</td>
+            <td>${{ (c.quantity * c.price).toFixed(2) }}</td>
+        </tr>
+        <tr>
+            <td colspan="4">Total Price: ${{ total.toFixed(2) }}</td>
+        </tr>
+    </table>
+  </div>
+  <p>The processs take 1-2 business day(s) for shipping.</p>
+  <button routerLink="/">Back to Home</button>
+</div>

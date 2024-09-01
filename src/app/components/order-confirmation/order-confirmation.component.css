@@ -1,0 +1,40 @@
+img {
+    width: 50px;
+    border-radius: 5px;
+}
+
+.order {
+    text-align: center;
+}
+
+.order-item {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+button {
+    border: 0;
+    border-radius: 25px;
+    padding: 0.75rem;
+    background-color: rgb(92, 92, 160);
+    color: #fff;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(93, 58, 126);
+}
