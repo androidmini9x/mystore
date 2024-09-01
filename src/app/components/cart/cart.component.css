@@ -45,3 +45,10 @@
 .purchase {
     text-align: right;
 }
+
+.error-msg {
+    font-size: 0.75rem;
+    color: red;
+    padding: 0;
+    display: block;
+}
