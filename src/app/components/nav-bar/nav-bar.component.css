@@ -2,13 +2,20 @@ header {
     text-align: center;
     background: #104457;
     color: #fff;
-    padding: 12px;
+    padding: 20px;
+}
+
+header > h2 {
+    font-variant: small-caps;
+    font-size: 2rem;
 }
 
 nav {
     display: flex;
     justify-content: center;
+    margin: 1rem;
 }
+
 
 a {
     color: #ffffff;
@@ -17,4 +24,5 @@ a {
     margin: 0.25rem;
     display:block;
     width: 100px;
+    text-decoration: none;
 }
